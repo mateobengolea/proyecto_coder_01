@@ -5,67 +5,240 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../imgs/logof1.png" type="image/x-icon">
+       <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/index.css">
+ 
     <title>Formula 1 Fan Page - Circuitos</title>
 </head>
 <body>
     <header class="main-header">
-        <div>
-        <img class="main-header__logo" src="../imgs/logof1.png" alt="logo formula 1" >
-        <h1 class="h1">Formula 1</h1>
-        </div>
-
-        <nav class="main-header__nav">
-            <ul class="menu">
+        <nav class="main-header__nav navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a>
+                    <img class="main-header__logo" src="../imgs/logof1.png" alt="logo formula 1" >
+                    <!-- <h1 class="h1">Formula 1</h1> -->
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav menu">
             
-          <li class="menu__item">  <a class="menu__link" href="../index.html">Inicio</a>
-          <li class="menu__item">  <a class="menu__link" href="equipos.html">Equipos</a>  </li>
-          <li class="menu__item">  <a class="menu__link" href="pilotos.html">Pilotos</a>    </li>
-          <li class="menu__item">  <a class="menu__link menu__link--active" href="circuitos.html">Circuitos</a>  </li>
-          <li class="menu__item">  <a class="menu__link" href="contacto.html">Contacto</a>    </li>
-        </ul>
-        </nav>
+                    <li class="nav-item menu__item">  <a class="nav-link menu__link" href="../index.html">Inicio</a>
+                    <li class="nav-item menu__item">  <a class="nav-link menu__link" href="equipos.html">Equipos</a>  </li>
+                    <li class="nav-item menu__item">  <a class="nav-link menu__link" href="pilotos.html">Pilotos</a>    </li>
+                    <li class="nav-item menu__item">  <a class="nav-link menu__link menu__link--active" href="circuitos.html">Circuitos</a>  </li>
+                    <li class="nav-item menu__item">  <a class="nav-link menu__link" href="contacto.html">Contacto</a>    </li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
 
     </header>
     
     <main>
 
-    <h2 id="titulopagina">Circuitos</h2>
-
+    <h3>Circuitos en orden de competencia</h3>
         <section>
-            <h2>Circuitos en orden de competencia</h2>
-            <article>
-                <ol>
-                    <li>Bahrein</li>
-                    <li>Arabia Saudita</li>
-                    <li>Australia</li>
-                    <li>Emilia Romana</li>
-                    <li>Miami</li>
-                    <li>España</li>
-                    <li>Monaco</li>
-                    <li>Azerbaiyan</li>
-                    <li>Canada</li>
-                    <li>Reino Unido</li>
-                    <li>Austria</li>
-                    <li>Francia</li>
-                    <li>Hungria</li>
-                    <li>Belgica</li>
-                    <li>Paises Bajos</li>
-                    <li>Italia</li>
-                    <li>Singapur</li>
-                    <li>Japon</li>
-                    <li>Estados Unidos</li>
-                    <li>México</li>
-                    <li>Brasil</li>
-                    <li>Abu Dhabi</li>
-                </ol>
-                
-            </article>
+            
+            <article class="row d-flex text-center container-sm container-md container-lg mx-auto">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <ul class="list-inline display-5">
+                            <li class="list-inline-item">1-Circuito Internacional de Bahréin</li>
+                            <li class="list-inline-item">Nº de vueltas 57</li>
+                            <li class="list-inline-item">Distancia 308.2 km</li>
+                          </ul>
+                        <img src="../imgs/01_bahrein.jpg" class="d-box w-75" alt="...">
+                        
+                      </div>
+                      <div class="carousel-item">
+                        <ul class="list-inline display-5">
+                            <li class="list-inline-item">2-Jeddah Corniche Circuit</li>
+                            <li class="list-inline-item">Nº de vueltas 50</li>
+                            <li class="list-inline-item">Distancia 308.5 km</li>
+                          </ul>
+                        <img src="../imgs/02_arabiasaudita.jpg" class="d-box w-75" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <ul class="list-inline display-5">
+                            <li class="list-inline-item">3-Circuito de Albert Park</li>
+                            <li class="list-inline-item">Nº de vueltas 58</li>
+                            <li class="list-inline-item">Distancia 306.1 km</li>
+                          </ul>
+                        <img src="../imgs/03_autralia.jpg" class="d-box w-75" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <ul class="list-inline display-5">
+                            <li class="list-inline-item">4-Autódromo Enzo&Dino Ferrari</li>
+                            <li class="list-inline-item">Nº de vueltas 63</li>
+                            <li class="list-inline-item">Distancia 309 km</li>
+                          </ul>
+                        <img src="../imgs/04_emiliaromana.jpg" class="d-box w-75" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <ul class="list-inline display-5">
+                            <li class="list-inline-item">5-Miami International Autodrome</li>
+                            <li class="list-inline-item">Nº de vueltas 57</li>
+                            <li class="list-inline-item">Distancia 308.3 km</li>
+                          </ul>
+                        <img src="../imgs/05_miami.jpg" class="d-box w-75" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <ul class="list-inline display-5">
+                            <li class="list-inline-item">6-Circuit de Barcelona-Catalunya</li>
+                            <li class="list-inline-item">Nº de vueltas 66</li>
+                            <li class="list-inline-item">Distancia 308.4 km</li>
+                          </ul>
+                        <img src="../imgs/06_barcelona.jpg" class="d-box w-75" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <ul class="list-inline display-5">
+                            <li class="list-inline-item">7-Circuito de Mónaco</li>
+                            <li class="list-inline-item">Nº de vueltas 78</li>
+                            <li class="list-inline-item">Distancia 260.3 km</li>
+                          </ul>
+                        <img src="../imgs/07_monaco.jpg" class="d-box w-75" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <ul class="list-inline display-5">
+                            <li class="list-inline-item">8-Circuito Urbano de Bakú</li>
+                            <li class="list-inline-item">Nº de vueltas 51</li>
+                            <li class="list-inline-item">Distancia 306 km</li>
+                          </ul>
+                        <img src="../imgs/08_azerbaiyan.jpg" class="d-box w-75" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <ul class="list-inline display-5">
+                            <li class="list-inline-item">9-Circuito Gilles Villeneuve</li>
+                            <li class="list-inline-item">Nº de vueltas 70</li>
+                            <li class="list-inline-item">Distancia 305.3 km</li>
+                          </ul>
+                        <img src="../imgs/09_canada.jpg" class="d-box w-75" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <ul class="list-inline display-5">
+                            <li class="list-inline-item">10-Circuito de Silverstone</li>
+                            <li class="list-inline-item">Nº de vueltas 52</li>
+                            <li class="list-inline-item">Distancia 306.2 km</li>
+                          </ul>
+                        <img src="../imgs/10_granbretania.jpg" class="d-box w-75" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <ul class="list-inline display-5">
+                            <li class="list-inline-item">11-Red Bull Ring</li>
+                            <li class="list-inline-item">Nº de vueltas 71</li>
+                            <li class="list-inline-item">Distancia 306.5 km</li>
+                          </ul>
+                        <img src="../imgs/11_austria.jpg" class="d-box w-75" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <ul class="list-inline display-5">
+                            <li class="list-inline-item">12-Circuit Paul Ricard</li>
+                            <li class="list-inline-item">Nº de vueltas 53</li>
+                            <li class="list-inline-item">Distancia 309.7 km</li>
+                          </ul>
+                        <img src="../imgs/12_francia.jpg" class="d-box w-75" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <ul class="list-inline display-5">
+                            <li class="list-inline-item">13-Circuito de Hungaroring</li>
+                            <li class="list-inline-item">Nº de vueltas 70</li>
+                            <li class="list-inline-item">Distancia 306.6 km</li>
+                          </ul>
+                        <img src="../imgs/13_hungria.jpg" class="d-box w-75" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <ul class="list-inline display-5">
+                            <li class="list-inline-item">14-Circuito de Spa-Francorchamps</li>
+                            <li class="list-inline-item">Nº de vueltas 44</li>
+                            <li class="list-inline-item">Distancia 308.1 km</li>
+                          </ul>
+                        <img src="../imgs/14_belgica.jpg" class="d-box w-75" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <ul class="list-inline display-5">
+                            <li class="list-inline-item">15-Circuit Zandvoort</li>
+                            <li class="list-inline-item">Nº de vueltas 72</li>
+                            <li class="list-inline-item">Distancia 306.6 km</li>
+                          </ul>
+                        <img src="../imgs/15_paisesbajos.jpg" class="d-box w-75" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <ul class="list-inline display-5">
+                            <li class="list-inline-item">16-Autódromo Nacional de Monza</li>
+                            <li class="list-inline-item">Nº de vueltas 53</li>
+                            <li class="list-inline-item">Distancia 306.7 km</li>
+                          </ul>
+                        <img src="../imgs/16_monza.jpg" class="d-box w-75" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <ul class="list-inline display-5">
+                            <li class="list-inline-item">17-Circuito Urbano de Marina Bay</li>
+                            <li class="list-inline-item">Nº de vueltas 61</li>
+                            <li class="list-inline-item">Distancia 308.7 km</li>
+                          </ul>
+                        <img src="../imgs/17_singapur.jpg" class="d-box w-75" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <ul class="list-inline display-5">
+                            <li class="list-inline-item">18-Circuito Internacional de Suzuka</li>
+                            <li class="list-inline-item">Nº de vueltas 53</li>
+                            <li class="list-inline-item">Distancia 307.5 km</li>
+                          </ul>
+                        <img src="../imgs/18_japon.jpg" class="d-box w-75" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <ul class="list-inline display-5">
+                            <li class="list-inline-item">19-Circuito de las Américas</li>
+                            <li class="list-inline-item">Nº de vueltas 56</li>
+                            <li class="list-inline-item">Distancia 308.4 km</li>
+                          </ul>
+                        <img src="../imgs/19_eeuu.jpg" class="d-box w-75" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <ul class="list-inline display-5">
+                            <li class="list-inline-item">20-Autódromo Hermanos Rodríguez</li>
+                            <li class="list-inline-item">Nº de vueltas 71</li>
+                            <li class="list-inline-item">Distancia 305.4 km</li>
+                          </ul>
+                        <img src="../imgs/20_mexico.jpg" class="d-box w-75" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <ul class="list-inline display-5">
+                            <li class="list-inline-item">21-Autódromo José Carlos Pace</li>
+                            <li class="list-inline-item">Nº de vueltas 71</li>
+                            <li class="list-inline-item">Distancia 305.9 km</li>
+                          </ul>
+                        <img src="../imgs/21_brasil.jpg" class="d-box w-75" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <ul class="list-inline display-5">
+                            <li class="list-inline-item">22-Circuito de Yas Marina</li>
+                            <li class="list-inline-item">Nº de vueltas 58</li>
+                            <li class="list-inline-item">Distancia 306.2 km</li>
+                          </ul>
+                        <img src="../imgs/22_abudabhi.jpg" class="d-box w-75" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </article>
         </section>
 </main>
 <footer class="footer"> 
     <h4> Fan Page - No asociado a la Formula 1</h4>
 </footer>
+
+<script src="../js/bootstrap.min.js"></script>
 </body>
 
 

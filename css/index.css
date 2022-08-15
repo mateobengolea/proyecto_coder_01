@@ -7,7 +7,7 @@
 }
 
 html{
-    font-size: 62.5%;
+    /* font-size: 62.5%; */
     height: 80%;
 }
 
@@ -64,18 +64,17 @@ body{
 }  
 
 header{
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
-    /* background-color: white; */
     flex-wrap: wrap;
 }
 
 
 .menu {
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: space-between;
     flex-wrap: wrap;   
 }
@@ -147,7 +146,7 @@ h1{
     grid-gap: 5px;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(5, 1fr);
-  align-content: center;
+    align-content: center;
 }
 
 
@@ -157,7 +156,7 @@ h1{
     grid-gap: 5px;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(5, 1fr);
-  align-content: center;
+    align-content: center;
 }
 
 
@@ -392,7 +391,10 @@ h1{
     grid-row: 20;
 } */
 
-
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
 
 
 /*Photos*/
@@ -400,7 +402,7 @@ h1{
 #photos {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+   /*  align-items: center; */
     flex-wrap: wrap;
     transition: background-color 1s linear;
     

@@ -5,33 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../imgs/logof1.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/index.css">
     <title>Formula 1 Fan Page - Equipos</title>
 </head>
 
 <body>
     <header class="main-header">
-        <div>
-        <img class="main-header__logo" src="../imgs/logof1.png" alt="logo formula 1" >
-        <h1 class="h1">Formula 1</h1>
-        </div>
-
-        <nav class="main-header__nav">
-            <ul class="menu">
+        <nav class="main-header__nav navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a>
+                    <img class="main-header__logo" src="../imgs/logof1.png" alt="logo formula 1" >
+                    <!-- <h1 class="h1">Formula 1</h1> -->
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav menu">
             
-          <li class="menu__item">  <a class="menu__link" href="../index.html">Inicio</a>
-          <li class="menu__item">  <a class="menu__link menu__link--active" href="equipos.html">Equipos</a>  </li>
-          <li class="menu__item">  <a class="menu__link" href="pilotos.html">Pilotos</a>    </li>
-          <li class="menu__item">  <a class="menu__link" href="circuitos.html">Circuitos</a>  </li>
-          <li class="menu__item">  <a class="menu__link" href="contacto.html">Contacto</a>    </li>
-        </ul>
-        </nav>
+                    <li class="nav-item menu__item">  <a class="nav-link menu__link" href="../index.html">Inicio</a>
+                    <li class="nav-item menu__item">  <a class="nav-link menu__link menu__link--active" href="equipos.html">Equipos</a>  </li>
+                    <li class="nav-item menu__item">  <a class="nav-link menu__link" href="pilotos.html">Pilotos</a>    </li>
+                    <li class="nav-item menu__item">  <a class="nav-link menu__link" href="circuitos.html">Circuitos</a>  </li>
+                    <li class="nav-item menu__item">  <a class="nav-link menu__link" href="contacto.html">Contacto</a>    </li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
 
     </header>
 
     <main>
         <div>
-    <h2 class="titulo_equipos">Conoce los equipos participantes de la temporada 2022</h2>
+    <h2 class="">Equipos participantes de la temporada 2022</h2>
         </div>
         <section id="teams">
 
@@ -241,5 +248,6 @@
 <footer class="footer"> 
     <h4> Fan Page - No asociado a la Formula 1</h4>
 </footer>
+<script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
