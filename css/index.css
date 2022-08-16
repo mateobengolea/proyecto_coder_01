@@ -142,11 +142,12 @@ h1{
 }
 
 #teams{
-    display: grid;
+    display: flex;
     grid-gap: 5px;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(5, 1fr);
-    align-content: center;
+    /* grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 1fr); */
+    /* align-content: center; */
+    flex-wrap: wrap;
 }
 
 
@@ -155,20 +156,21 @@ h1{
     display: grid;
     grid-gap: 5px;
     grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     align-content: center;
+    
 }
 
 
 @media (max-width: 786px) {
-    #teams{
+ /*    #teams{
 
         display: grid;
         grid-template-rows: repeat(2, 2fr);
         grid-template-columns: repeat(2, 2fr);
         align-content: center;
         grid-gap: 5px;
-    }
+    } */
     #pilotos {
 
         display: grid;
@@ -180,14 +182,14 @@ h1{
 }
 
 @media (max-width: 320px) {
-    #teams{
+    /* #teams{
 
         display: grid;
         grid-template-rows: repeat(1, 1fr);
         grid-template-columns: repeat(1, 1fr);
         align-content: center;
         grid-gap: 5px;
-    }
+    } */
     #pilotos {
 
         display: grid;
@@ -390,11 +392,6 @@ h1{
     grid-column: 4 / 5 ;
     grid-row: 20;
 } */
-
-.bigicon {
-    font-size: 35px;
-    color: #36A0FF;
-}
 
 
 /*Photos*/
