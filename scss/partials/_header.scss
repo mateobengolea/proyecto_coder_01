@@ -1,0 +1,50 @@
+header{
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    h1{
+        font-size: 45px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 200;
+        color: red;
+        text-shadow: 2px 2px 2px black;
+        
+    }
+    .main-header__logo{
+        height: 45px;
+        width: 70px;
+        margin: 18px 18px 18px 18px;
+        display: block;
+        animation-name: pipo;
+       animation-duration: 5s;
+    }
+
+    .menu {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        flex-wrap: wrap; }
+
+        .menu__link{
+            color: black;
+            padding: 10px;
+            font-size: 22px;
+            font-weight: bold;
+            transition: all .5s;
+            font-family: Arial, Helvetica, sans-serif;
+    
+            &:hover {
+                background-color: #C1292E;
+                color: black;
+                border-radius: 33px;  
+            }
+        }
+    
+        .menu__link--active {
+            border: 1px solid #C1292E;
+            border-radius: 33px;
+        }
+
+}

@@ -1,0 +1,15 @@
+/*Keyframes*/
+
+@keyframes pipo{
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(30deg); }
+    50% { transform: rotate(120deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes giro{
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(25deg); }
+    50% { transform: rotate(-25deg); }
+    100% { transform: rotate(0deg); }
+}
