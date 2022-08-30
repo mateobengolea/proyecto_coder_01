@@ -1,17 +1,28 @@
 #photos {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    @include flex(row, wrap, space-between, stretch)
     transition: background-color 1s linear;
+}
 
+    $photo: (
+        equipos: "equipos",
+        pilotos: "pilotos",
+        circuitos: "circuitos",
+        contacto: "contacto",
+    );
+
+    .photos-article{
+        @each $key, $val in $photo {
+            &__#{$key} {
+                background-image: url("../imgs/#{$val}.jpg");
+            }
+        }
+    }
 
     .photos-article__equipos{
         text-decoration: none;
-        background-image: url(equipos.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        font-size: 40px;
         font-family: Arial, Helvetica, sans-serif;
         text-decoration: none;
         text-align: center;
@@ -22,29 +33,25 @@
         display: inline-block;
         overflow-y: hidden;
         overflow-x: visible;
-        color: #F1D302;
-        text-shadow: 2px 4px 2px black;
         border-radius: 150px;
-        
+        text-shadow: 2px 4px 2px black;  
+        color: #F1D302;
     }
     
     .photos-article__equipos:hover{
         color: #F1D302;
         border-radius: 45px;
-        font-size: 55px;
+        font-size: map-get($font-sizes , text-xl );
         animation-name: giro;
        animation-duration: 5s;
     }
     
     .photos-article__pilotos{
         text-decoration: none;
-        background-image: url(pilotos.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        font-size: 40px;
         font-family: Arial, Helvetica, sans-serif;
-        color: white;
         text-decoration: none;
         text-align: center;
         width: 320px;
@@ -54,27 +61,25 @@
         display: inline-block;
         overflow-y: hidden;
         overflow-x: visible;
-        text-shadow: 2px 4px 2px black;
         border-radius: 150px;
+        text-shadow: 2px 4px 2px black;  
+        color: white;
     }
     
     .photos-article__pilotos:hover{
         color: white;
         border-radius: 45px;
-        font-size: 55px;
+        font-size: map-get($font-sizes , text-xl );
         animation-name: giro;
        animation-duration: 5s;
     }
     
     .photos-article__circuitos{
         text-decoration: none;
-        background-image: url(circuitos.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        font-size: 40px;
         font-family: Arial, Helvetica, sans-serif;
-        color: #C1292E;
         text-decoration: none;
         text-align: center;
         width: 320px;
@@ -84,14 +89,15 @@
         display: inline-block;
         overflow-y: hidden;
         overflow-x: visible;
-        text-shadow: 2px 4px 2px black;
         border-radius: 150px;
+        text-shadow: 2px 4px 2px black;  
+        color: #C1292E;
     }
     
     .photos-article__circuitos:hover{
         color: #C1292E;
         border-radius: 40px;
-        font-size: 55px;
+        font-size: map-get($font-sizes , text-xl );
         overflow: hidden;
         animation-name: giro;
        animation-duration: 5s;
@@ -99,13 +105,10 @@
     
     .photos-article__contacto{
         text-decoration: none;
-        background-image: url(contacto.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        font-size: 40px;
         font-family: Arial, Helvetica, sans-serif;
-        color: #067BC2;
         text-decoration: none;
         text-align: center;
         width: 320px;
@@ -115,20 +118,21 @@
         display: inline-block;
         overflow-y: hidden;
         overflow-x: visible;
-        text-shadow: 2px 4px 2px black;
         border-radius: 150px;
+        text-shadow: 2px 4px 2px black;  
+        color: #067BC2;
     }
     
     .photos-article__contacto:hover{
         color: #067BC2;
         border-radius: 45px;
-        font-size: 55px;
+        font-size: map-get($font-sizes , text-xl );
         overflow: hidden;
         animation-name: giro;
        animation-duration: 5s;
     }
     
-}
+
 
 
 
