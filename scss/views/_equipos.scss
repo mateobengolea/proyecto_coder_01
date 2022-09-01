@@ -1,7 +1,9 @@
 #teams{
-    display: flex;
+    display: grid;
     grid-gap: 5px;
-    flex-wrap: wrap;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 0fr);
+    margin: 2rem;
 }
 
 .titulo_equipos{
@@ -12,4 +14,32 @@
     justify-content: center;
     text-shadow: 1px 1px 2px #C1292E;
     
+}
+
+/*Media*/
+
+@media (max-width: 786px) {
+
+    #teams {
+
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 0fr);
+        align-content: center;
+        grid-gap: 5px;
+      
+    }
+}
+
+@media (max-width: 420px) {
+
+    #teams {
+
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 0fr);
+        align-content: center;
+        grid-gap: 5px;
+       
+    }
 }
