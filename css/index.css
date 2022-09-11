@@ -41,7 +41,6 @@
   box-sizing: border-box; }
 
 html {
-  /* font-size: 62.5%; */
   height: 80%; }
 
 img {
@@ -69,23 +68,6 @@ body {
 .flex-row {
   display: flex;
   flex-direction: row; }
-
-/*Media*/
-@media (max-width: 786px) {
-  #pilotos {
-    display: grid;
-    grid-template-rows: repeat(2, 2fr);
-    grid-template-columns: repeat(2, 2fr);
-    align-content: center;
-    grid-gap: 5px; } }
-
-@media (max-width: 420px) {
-  #pilotos {
-    display: grid;
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-columns: repeat(1, 1fr);
-    align-content: center;
-    grid-gap: 5px; } }
 
 /* Partials */
 header {
@@ -287,7 +269,7 @@ header {
     align-content: center;
     grid-gap: 5px; } }
 
-@media (max-width: 420px) {
+@media (max-width: 320px) {
   #teams {
     display: grid;
     grid-template-rows: repeat(1, 1fr);
@@ -303,6 +285,14 @@ header {
   margin: 2rem; }
 
 /*Media*/
+@media (max-width: 1340px) {
+  #pilotos {
+    display: grid;
+    grid-template-rows: repeat(3, 3fr);
+    grid-template-columns: repeat(3, 0fr);
+    align-content: center;
+    grid-gap: 5px; } }
+
 @media (max-width: 786px) {
   #pilotos {
     display: grid;
@@ -311,7 +301,15 @@ header {
     align-content: center;
     grid-gap: 5px; } }
 
-@media (max-width: 420px) {
+@media (max-width: 590px) {
+  #pilotos {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 0fr);
+    align-content: center;
+    grid-gap: 5px; } }
+
+@media (max-width: 320px) {
   #pilotos {
     display: grid;
     grid-template-rows: repeat(1, 1fr);
